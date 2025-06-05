@@ -1,145 +1,75 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f3e7;
+/* Reset default margin/padding */
+* {
   margin: 0;
   padding: 0;
-}
-
-.form-page {
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 25px;
-  background-color: #fff8e1;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
-  border: 2px solid #d4af37;
-  width: 90%;
   box-sizing: border-box;
 }
 
-.donation-form {
-  background-image: url('temple2.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 1rem;
-  border-radius: 16px;
-  position: relative;
-  background-color: rgba(148, 145, 145, 0.9);
-  background-blend-mode: lighten;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  gap: 12px; /* space between image and text */
-  justify-content: center; /* center horizontally */
-  margin-bottom: 20px;
-}
-
-.stamp-logo {
-  width: 50px;  /* adjust size as needed */
-  height: 50px;
-  object-fit: contain;
-  border-radius: 8px; /* optional: make it slightly rounded */
-}
-
-
-.header h2 {
-  color: #d30808;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-input, select {
+html, body {
+  height: 100%;
   width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-sizing: border-box;
-  font-size: 1rem;
+  font-family: Arial, sans-serif;
 }
 
-.info-box {
-  background-color: #fff;
-  padding: 15px;
-  border: 2px solid #d4af37;
+body {
+  background-image: url('img8.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Form Container */
+.form-box {
+  background-color: #ffffff;
+  padding: 30px 25px;
   border-radius: 10px;
-  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 350px;
   text-align: center;
 }
 
-#upiQR img {
-  margin-top: 10px;
-  border-radius: 8px;
-  max-width: 120px;  /* Reduced from 180px */
+/* Inputs and Select */
+input[type="date"],
+select {
   width: 100%;
-  height: auto;
-  border: 2px solid #d4af37;
-  padding: 4px;  /* Reduced padding a bit */
-  background-color: rgb(145, 142, 142);
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-
-#bankDetails p, #upiQR p {
-  margin: 5px 0;
-  font-weight: bold;
-  color: #3e2723;
-}
-
-.btn-group {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 25px;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.reset-btn, .submit-btn {
-  flex: 1 1 45%;
-  padding: 10px 20px;
-  font-size: 16px;
+/* Submit Button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
   border: none;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 5px;
   cursor: pointer;
+  width: 100%;
   font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.reset-btn {
-  background-color: #e53935;
-  color: white;
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
-.submit-btn {
-  background-color: #43a047;
-  color: white;
+/* Labels and Title */
+label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
 }
 
-@media (max-width: 600px) {
-  .btn-group {
-    flex-direction: column;
-  }
-
-  .reset-btn, .submit-btn {
-    flex: 1 1 100%;
-  }
-
-  .form-page {
-    margin: 20px;
-    padding: 15px;
-  }
-
-  .header h2 {
-    font-size: 1.5rem;
-  }
+h1 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: rgb(136, 207, 31);
 }

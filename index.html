@@ -1,70 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Donation Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donation - KGE Technologies</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="form-page">
-    <form class="donation-form" id="donationForm">
-      <div class="header">
-        <img src="amman2 (1).jpg" alt="Temple Logo" class="stamp-logo">
-        <h2>Shri Selliyamman Alayam</h2>
-      </div>
+  <div class="form-box">
+    <form id="donation-form">
+      <h1>Shri Selliyamman Alayam</h1>
 
-      <label for="name">Name*</label>
-      <input type="text" id="name" name="name" placeholder="Enter Name" required>
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" name="start-date" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter Email">
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" name="end-date" required>
 
-      <label for="mobile">Mobile</label>
-      <input type="text" id="mobile" name="mobile" placeholder="Enter Mobile Number">
-
-      <label for="location">Location*</label>
-      <input type="text" id="location" name="location" placeholder="Enter Location Name" required>
-
-      <label for="amount">Amount*</label>
-      <input type="number" id="amount" name="amount" placeholder="Enter Amount" required>
-
-      <label for="paymentMode">Mode of Payment*</label>
-      <select id="paymentMode" name="paymentMode" required>
-        <option value="">-- Select Payment Mode --</option>
-        <option value="Bank">Bank</option>
-        <option value="UPI">UPI</option>
-        <option value="Cash">Cash</option>
+      <label for="purpose">Purpose Type:</label>
+      <select id="purpose" name="purpose" required>
+        <option value="">-- Select --</option>
+        <option value="other">Other Donation</option>
+        <option value="festival">Festival Donation</option>
+        <option value="special">Special Occasion Donation</option>
       </select>
 
-      <div id="upiQR" class="info-box" style="display: none;">
-        <p><strong>Scan to Donate via UPI</strong></p>
-        <img src="UPIQRCode.png" alt="UPI QR Code">
-      </div>
-
-      <div id="bankDetails" class="info-box" style="display: none;">
-        <p><strong>Bank Transfer Details</strong></p>
-        <p>Account Name: <strong>Shri Selliyamman Alayam</strong></p>
-        <p>Account Number: <strong>1234567890</strong></p>
-        <p>IFSC Code: <strong>SBIN0001234</strong></p>
-        <p>Bank Name: <strong>State Bank of India</strong></p>
-      </div>
-
-      <label for="purpose">Purpose For</label>
-      <select id="purpose" name="purpose">
-        <option value="TYPE OF DONATION">Type of Donation</option>
-        <option value="Annadhanam">Annadhanam</option>
-        <option value="Temple Maintenance">Temple Maintenance</option>
-        <option value="Other Donation">Other Donation</option>
-      </select>
-
-      <div class="btn-group">
-        <button type="button" class="reset-btn" onclick="resetForm()">Reset</button>
-        <button type="submit" class="submit-btn">Submit</button>
-      </div>
+      <input type="submit" value="Submit">
     </form>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
-
